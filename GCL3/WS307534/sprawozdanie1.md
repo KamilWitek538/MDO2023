@@ -34,3 +34,13 @@
 ![](./screeny/utworzenie%20nowej%20galezi.png)
 
 ![](./screeny/utworzenie%20katalogu%20i%20pliku%20ze%20sprawozdaniem.png)
+
+![](./screeny/przeniesienie%20screenow.png)
+
+![](./screeny/dodanie_screenow_do_sprawozdania.png)
+
+![](./screeny/pierwszy_commit.png)
+
+![](./screeny/push_zmian.png)
+
+![](./screeny/merge_mojej_galezi.png)
