@@ -1,0 +1,23 @@
+
+
+1. Będę pracować na wsl z systemem UBUNUTU Focal co można zauwazyc na ponizszym screenie
+![alt text](./screeny/lab-p1-os.png)
+2.  Na systemie znajduje sie juz klient git oraz program do generowania kluczy ssh, co widac na ponizszych screenach
+![alt text](./screeny/git-v.png)
+![alt text](./screeny/ssh-keygen.png)
+3. Nastepnie wygenerowano 2 pary kluczow ssh zaszyfrowanych protokolem ed25519, z czego jedno z nich posiada dodatkowo haslo
+![alt text](./screeny/ed-keygen.png)
+![alt text](./screeny/ed-ketgen2.png)
+4. Nastepnie skonfigurowano zdalny system kontorli wersji tak aby korzystal z pierwszego klucza publicznego, poprzez doanie do ssh-keys w ustawieniach konta
+![alt text](./screeny/github-ssh.png)
+oraz skonifgurowano git config projektu,tak aby uzywal drugiej pary klucza
+![alt text](./screeny/git_config_ssh_cmd.png)
+co można sprawdzić pod .git/config projektu
+![alt text](./screeny/local_git_config.png).
+
+5. W moim przypadku przed krokami 1-4 zmieniłem branch na gałąź *lab* przy uzyciu komendy git checkout lab3, a nastepnie stworzyłem nowa gałąź przy uzyciu komendy git checkout -b asz404367
+
+Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem w już skonifgurowano.
+
+
+
