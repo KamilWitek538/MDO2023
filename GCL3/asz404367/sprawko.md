@@ -19,5 +19,8 @@ co można sprawdzić pod .git/config projektu
 
 Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem w już skonifgurowano.
 
+Nastepnie zmergowano stworzony branch do galezi LAB3 
+![alt text](./screeny/merge.png).
+
 
 
