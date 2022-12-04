@@ -17,9 +17,10 @@
 7.	Utworzenie mojego katalogu- git checkout SG287586, cd GCL1, mkdir SG287586
 
 		Dodanie pliku ze sprawozdaniem- vi 1sprawozdanieGrabowski.md
-
 		SS przesłane za pomocą SCP- scp
-
-		Dodanie SS do katalogu 1SS 
+		Dodanie SS do katalogu 1SS
+		Wysłanie zmian do zdalnego źródła git add ./ ; git commit -m "First step commit to remote repository- screenshots and statement" ;
+			git push --set-upstream origin SG287586
+		 
 
 
