@@ -1,1 +1,23 @@
 Sprawozdanie Damian Rydzicki.
+
+Wszystkie screenshoty obrazujące poczynione kroki znajdują się w katalogi Screenshots i są odpowiednio ponumerowane numerem zadania oraz numerem oznaczającym kolejność wykonywanych akcji.
+1. Komunikacja ze środowiskiem linuksowym została tutaj ukazana za pomocą połączenia poprzez SSH oraz SFTP. Wszystkie polecenia wykonywane są poprzez SSH, a pliki przesyłane są za pomocą połączenia SFTP.
+
+2. Klient git oraz obsługa ssh została już przeze mnie zainstalowana wcześniej, dla potwierdzenia umieściłem jedynie screen wersji Gita oraz wygenerowałem przykładowy klucz, którego używam później do komunikacji z Githubem.
+
+3. Jak mówi treść zadania - repozytorium zostało sklonowane za pomocą protokołu HTTPS.
+
+4. Jako że wcześniej wykonałem jeden z kroków tego zadania, to tutaj jedynie utworzyłem klucz zabezpieczony hasłem, a następnie sklonowałem repozytorium do nowego katalogu za pomocą połączenia SSH.
+
+5. Tutaj nastąpiło przełączenie na gałąź grupy za pomocą komendy git checkout.
+
+6. Tutaj za pomocą komendy git checkout -b, stworzony został nowy lokalny branch o odpowiedniej nazwie, oraz nastąpiło natychmiastowe przjście na niego. 
+
+7. W tym punkcie nastąpiły następujące czynności: 
+	- stworzony został folder o odpowiedniej nazwie
+	- stworzony został folder w którym przechowywane są zrzuty ekranu w formacie png
+	- stworzony został ten dokument
+	- za pomocą połączenia sftp zostały przesłane screenshoty obrazujące postęp prac do poprzedniego podpunktu włącznie, za pomocą komendy "put -r"
+	- w tym momencie został wykonany commit oraz push który przesłał pusty dokument oraz screenshoty do repozytorium
+	- kolejnym krokiem jest próba wykonania merge'a która zakończyła się niepowodzeniem z powodu tego, iż branch grupowy jest oznaczony jako protected i wymagany jest pull request (bądź przyznane uprawnienia ;))
+	- w tym momencie nastepuje rozpoczecie pracy nad sprawozdaniem (tak, to jest ten dokument) oraz wysłanie aktualizacji do repozytorium.
