@@ -21,6 +21,6 @@
 		Dodanie SS do katalogu 1SS
 		Wysłanie zmian do zdalnego źródła git add ./ ; git commit -m "First step commit to remote repository- screenshots and statement" ;
 			git push --set-upstream origin SG287586
-		 
-
+		Wciągniecie mojej gałęzi do gałęzi grupowej: git checkout GCL1, git merge SG287586 
+		
 
