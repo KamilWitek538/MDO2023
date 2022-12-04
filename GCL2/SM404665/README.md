@@ -38,8 +38,11 @@ SFTP:
  ![image description](images/lab1_zdj10.png)
 7. Dodaje zdjęcie commita i dodaje kolejnego commita jak w instrukcji
  ![image description](images/lab1_zdj13.png)
-  Dodałem hooki
- ![image description](images/hooks.png)
+ 
+ Dodałem hooki
+
+![image description](images/hooks.png)
+
 Weryfikacja działania środowiska konteneryzacji
 1.	Mam dostęp po SSH, jak wykazałem powyżej jest to serwer z zainstalowanym natywnie ubuntu w tej samej sieci lokalnej do którego łączę się terminalem, zainstalowałem na nim dockera
  ![image description](images/lab1_zdj11.png)
