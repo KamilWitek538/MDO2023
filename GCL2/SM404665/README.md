@@ -36,7 +36,8 @@ SFTP:
  
 6.	Utworzyłem katalog SM404665 w którym umieszczę te sprawozdanie
  ![image description](images/lab1_zdj10.png)
-
+7. Dodaje zdjęcie commita i dodaje kolejnego commita jak w instrukcji
+ ![image description](images/lab1_zdj13.png)
 Weryfikacja działania środowiska konteneryzacji
 1.	Mam dostęp po SSH, jak wykazałem powyżej jest to serwer z zainstalowanym natywnie ubuntu w tej samej sieci lokalnej do którego łączę się terminalem, zainstalowałem na nim dockera
  ![image description](images/lab1_zdj11.png)
