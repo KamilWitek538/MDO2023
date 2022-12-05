@@ -38,6 +38,9 @@ Do tego zadania mozemy wykorzytac hook pre-commit-msg, w którym dodamy prefiks 
 
 ![alt text](./screeny/pre-commit-msg.png).
 
+Przykład działania hooka pre-commit-msg
+![alt text](./screeny/TESTHOOK2.PNG)
+
 
 Skryptą prepare-commit-msg oraz commit-msg dodano uprawnienia wykonywalne.
 
