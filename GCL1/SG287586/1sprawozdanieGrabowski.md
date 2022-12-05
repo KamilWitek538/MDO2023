@@ -58,3 +58,23 @@
 					        sed -i '1i devops' $1
 					fi
  
+
+Dostęp do maszyny wykazany w pierwszym punkcie- wirtualizację obsługuje Virtual Box, dostęp poprzez MobaXterm
+
+Docker zainstalowany: sebastian@sebastian-VirtualBox:~$ docker --version
+Docker version 20.10.12, build 20.10.12-0ubuntu4
+
+Docker działający serwis- sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2022-12-05 17:22:42 CET; 1min 5s ago
+
+Wykazanie praktyczne: docker run -i --tty a8780b506fa4 bash (podaje id obrazu ubuntu pobranego docker pull ubuntu). I w środku kontenera polecenie uname -a oraz polecenie
+docker ps -a do weryfikacji działania. 
+
+Zarejestrowałem się na DockerHub
+
+
+
+
+
