@@ -1,0 +1,29 @@
+Wszystkie screenshoty z wykonywanych działań zostały wrzucone do folderu Screenshots
+
+
+1. Komunikacja ze środowiskiem linuksowym została tutaj ukazana za pomocą połączenia poprzez SSH oraz SFTP. Wszystkie polecenia wykonywane są poprzez SSH, a pliki przesyłane są za pomocą połączenia SFTP.
+
+2. Klient git oraz obsługa ssh została już zainstalowana oraz skonfigurowana wcześniej. Na screenach widać że tworze jeszcze jeden dodatkowy klucz.
+
+3. Repozytorium zostało sklonowane przez HTTPS
+
+4. Utworzyłem klucz zabezpieczony hasłem, a następnie sklonowałem repozytorium do nowego katalogu za pomocą połączenia SSH.
+
+5. Następnie przełączyłem się na gałąź grupy za pomocą komendy git checkout.
+
+6. Za pomocą komendy git checkout -b, stworzony został nowy lokalny branch o odpowiedniej nazwie, oraz nastąpiło natychmiastowe przjście na niego. 
+
+7. Wykonałem następujące czynności: 
+	- stworzony został folder o odpowiedniej nazwie
+	- stworzony został folder w którym przechowywane są zrzuty ekranu w formacie png
+	- stworzony został ten dokument
+	- z pomocą programu FileZilla zostały przesłane screenshoty obrazujące postęp prac
+	- w tym momencie został wykonany commit oraz push który przesłał pusty dokument oraz screenshoty do repozytorium
+	- kolejnym krokiem jest próba wykonania merge'a która zakończyła się niepowodzeniem z powodu tego, iż branch grupowy jest oznaczony jako protected i wymagany jest pull request (bądź przyznane uprawnienia ;))
+	- następuję praca nad sprawozdaniem a nastepnie wysłanie aktualizacji do repozytorium.
+	- oznaczono tagiem ostatni commit git tag JHTAG HEAD, git log, git push --tags
+	- utworzono hook o nazwe commit-hook w folderze .git/hooks oraz o nazwie prep-commit-hook
+	- dostęp do maszyny został wykazany w punkcie pierwszym
+	- docker zainstalowany pokazane na screenshot "Docker informacje" wersja 20.10.17
+	- uruchomienie dockera z ubuntu docker run -i -tty a8780b506fa4 bash
+	- zarejestrowałem oraz zalogowałem się w DockerHub
