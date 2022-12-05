@@ -1,5 +1,5 @@
 
-
+# Wprowadzenie, Git, Gałęzie, SSH
 1. Będę pracować na wsl z systemem UBUNUTU Focal co można zauwazyc na ponizszym screenie
 ![alt text](./screeny/lab-p1-os.png)
 2.  Na systemie znajduje sie juz klient git oraz program do generowania kluczy ssh, co widac na ponizszych screenach
@@ -48,6 +48,25 @@ Przykład działania hooka pre-commit-msg
 
 
 Skryptą prepare-commit-msg oraz commit-msg dodano uprawnienia wykonywalne.
+
+# Weryfikacja działania środowiska konteneryzacji
+
+1. Instalacja dockera
+
+    Ze względu na to, że pracuje na wsl2 musiałem zmienić ustawienie w docker desktop tak,aby uzyć docker-engine, którego miałem zaoinstalowanego na komputerze
+
+    ![alt text](./screeny/docker-wsl-config1.png)
+    ![alt text](./screeny/docker-wsl-config2.png)
+    ![alt text](./screeny/docker-wsl-config3.png)
+2. Działanie środowiska
+    Pobrano obraz fedora w wersji latest 
+    ![alt text](./screeny/docker-img.png)
+3. Utworzono konto na dockerhub oraz dodano 2FA po czym wygenerowano token przy pomocy, ktorego zalogowano się z poziomu cli na stworzone konto.
+
+    ![alt text](./screeny/dockerhub2fa.png)
+    ![alt text](./screeny/dockerlogin.png)
+
+
 
 
 
