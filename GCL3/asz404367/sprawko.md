@@ -10,32 +10,39 @@
 ![alt text](./screeny/ed-ketgen2.png)
 4. Nastepnie skonfigurowano zdalny system kontorli wersji tak aby korzystal z pierwszego klucza publicznego, poprzez doanie do ssh-keys w ustawieniach konta
 ![alt text](./screeny/github-ssh.png)
+
 oraz skonifgurowano git config projektu,tak aby uzywal drugiej pary klucza
+
 ![alt text](./screeny/git_config_ssh_cmd.png)
 co można sprawdzić pod .git/config projektu
 ![alt text](./screeny/local_git_config.png).
 
-5. W moim przypadku przed krokami 1-4 zmieniłem branch na gałąź *lab* przy uzyciu komendy git checkout lab3, a nastepnie stworzyłem nowa gałąź przy uzyciu komendy git checkout -b asz404367
+5. W moim przypadku przed krokami 1-4 zmieniłem branch na gałąź *lab3* przy uzyciu komendy git checkout lab3, a nastepnie stworzyłem nowa gałąź przy uzyciu komendy git checkout -b asz404367
 
-Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem w już skonifgurowano.
+Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem już skonifgurowano.
 
 Nastepnie zmergowano stworzony branch do galezi LAB3 
 ![alt text](./screeny/merge.png).
 
 ## Hook sprawdzajacy, czy commit zawiera nazwę przedmiotu.
+    .git/hooks/commit-msg hook przyjmuje jeden parametr, który jest ścieżką do pliku tymczasowego zawierającego wiadomość commita. Git przerwie proces commitowanie, jeśli skrypt zakończy się wartością różną od zera.
+
  Zanim zostanie stworzony commit git uruchomi skrypt pre-commit znajdujacy sie w lokalnym repozytorium pod .git/hooks . W tym hooku napisano logike sprawdzajaca czy commit zawiera nazwe przdmiotu
-![alt text](./screeny/pre-commit-create.png).
-![alt text](./screeny/pre-commit.png).
+![alt text](./screeny/commit-msg.png).
 
 Test hooka
 
 ## Hook ustawiajacy prefiks do commitu
 
-Do tego zadania mozemy wykorzytac skrypt pre-commit-msg, w którym dodamy prefiks devops, jesli nie istnieje.
+Do tego zadania mozemy wykorzytac hook pre-commit-msg, w którym dodamy prefiks devops, jesli nie istnieje.
+
+    Prepare-commit-msg hook jest uruchamiany przed uruchomieniem edytora komunikatów zatwierdzania, ale po utworzeniu commitu. Pozwala edytować domyślną wiadomość, zanim zobaczy ją autor. Hook pobiera kilka parametrów: ścieżkę do pliku, w którym znajduje się dotychczas commit, typ commitu i SHA-1 commitu, jeśli został zmieniony.Hook jest przydatny w przypadku zatwierdzeń, w których domyślna wiadomość jest generowana automatycznie.
+
 ![alt text](./screeny/pre-commit-msg.png).
 
 
-Wszystkim scryptom dodano prawo wykonywanie.
+Skryptą prepare-commit-msg oraz commit-msg dodano uprawnienia wykonywalne.
 
 
 
+## **Historia wykonywanych poleceń znajduje się w plilku ./history_lab1.txt**
