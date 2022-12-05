@@ -9,17 +9,22 @@
 ![alt text](./screeny/ed-keygen.png)
 ![alt text](./screeny/ed-ketgen2.png)
 4. Nastepnie skonfigurowano zdalny system kontorli wersji tak aby korzystal z pierwszego klucza publicznego, poprzez doanie do ssh-keys w ustawieniach konta
+
 ![alt text](./screeny/github-ssh.png)
+
 oraz skonifgurowano git config projektu,tak aby uzywal drugiej pary klucza
+
 ![alt text](./screeny/git_config_ssh_cmd.png)
+
 co można sprawdzić pod .git/config projektu
+
 ![alt text](./screeny/local_git_config.png).
 
-5. W moim przypadku przed krokami 1-4 zmieniłem branch na gałąź *lab* przy uzyciu komendy git checkout lab3, a nastepnie stworzyłem nowa gałąź przy uzyciu komendy git checkout -b asz404367
+5. W moim przypadku przed krokami 1-4 zmieniłem branch na gałąź *lab3* przy uzyciu komendy git checkout lab3, a nastepnie stworzyłem nowa gałąź przy uzyciu komendy git checkout -b asz404367
 
-Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem w już skonifgurowano.
+Nastepnie wykonano commita z nowy kluczem ssh - clona zrobiono jeszcze z starym kluczem, który miałem już skonifgurowano.
 
-Nastepnie zmergowano stworzony branch do galezi LAB3 
+Nastepnie zmergowano stworzony branch do lokalnej galezi LAB3 
 ![alt text](./screeny/merge.png).
 
 ## Hook sprawdzajacy, czy commit zawiera nazwę przedmiotu.
