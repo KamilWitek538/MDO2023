@@ -33,3 +33,13 @@
 
 ![](./screeny/tworzenie_sprawka_screeny.png)
 
+![](.screeny/przeslanie_ss.png)
+
+![](.screeny/edycja_sprawozdania.png)
+
+![](.screeny/commit.png)
+
+![](.screeny/Screenshot_1.png)
+
+![](.screeny/merge.png)
+
