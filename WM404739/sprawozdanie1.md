@@ -20,5 +20,10 @@
 ![](.screnshoty/tworzenie_katalogu.png)
 ![](.screnshoty/przesylanie_ss.png)
 ![](.screnshoty/dodanie_ss_do_sprawozdania.png)
+![](.screnshoty/dodawanie_plikow.png)
+![](.screnshoty/tworzenie_commita.png)
+![](.screnshoty/tworzenie_pusha)
+![](.screnshoty/merge.png)
+![](.screnshoty/aktualizacja_sprawozdania.png)
 
 
