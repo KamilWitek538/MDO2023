@@ -1,5 +1,5 @@
 1. Zainstaluj docker- apt install docker, weryfikacja docker --version, systemctl status docker
-![first](/home/sebastian/MDO2023/GCL1/SG287586/LAB2/first.png)
+![first](/home/sebastian/LAB2SS/first.png)
 
 2. Zarejestruj się w dockerhub- konto założone, nick objdumpr 
 ![second](/home/sebastian/LAB2SS/2ss.png)
