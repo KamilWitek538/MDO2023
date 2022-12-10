@@ -1,5 +1,13 @@
 Sprawozdanie Lab01 2022-11-26 Michał Kluba 301170
-Setup: Komputer lokalny: Windows10
+
+
+
+
+Setup: Komputer lokalny: Windows 10
+
+
+
+
 Serwer zdalny: Ubuntu 22.04.1, utworzona VM w programie VirtualBox.
 
 1. Weryfikacja środowiska UX
