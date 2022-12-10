@@ -66,3 +66,7 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	* Ustal hook, który będzie sprawdzał, czy wiadomość z commitem zawiera nazwę przedmiotu
 	
 	![](./img/14.png)
+	
+	![](./img/15.png)
+	
+	
