@@ -98,7 +98,7 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	
 		* pobierz obraz dystrybucji linuksowej i uruchom go
 		
-		![](./img/15.png)
+		![](./img/17.png)
 		
 		* wyświetl jego numer wersji
 		
