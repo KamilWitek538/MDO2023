@@ -98,6 +98,10 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	
 		* pobierz obraz dystrybucji linuksowej i uruchom go
 		
+		![](./img/15.png)
+		
 		* wyświetl jego numer wersji
 		
 3) Załóż konto na Docker Hub lub zaloguj się do już posiadanego. Zadbaj o 2FA.
+
+Link do profilu: https://hub.docker.com/u/patrykmurzyn
