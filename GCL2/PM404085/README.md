@@ -88,11 +88,13 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 
 	* zainstaluj środowisko dockerowe w stosowanym systemie operacyjnym
 	
+	![](./img/16.png)
+	
 2) Działanie środowiska
 	
 	* wykaż, że środowisko dockerowe jest uruchomione i działa (z definicji)
 	
-	![](./img/16.png)
+	![](./img/18.png)
 	
 	* wykaż działanie z sposób praktyczny (z własności):
 	
