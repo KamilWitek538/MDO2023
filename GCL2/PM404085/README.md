@@ -71,9 +71,21 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	
 	* W jaki sposób stworzyć hook, który będzie ustawiał prefiks wiadomości commitu tak, by miał nazwę przedmiotu?
 	
-	Należy do tego wykorzystać hook pre-commit-msg. Skrypt na bazie poprzedniego kodu. Po zamknięciu ifa 'fi' dodajemy komendę 
+	Należy do tego wykorzystać hook pre-commit-msg. Skrypt na bazie poprzedniego kodu. Po zamknięciu ifa 'fi' dodajemy komendę: 
 	```
 	echo "$KEY $START_LINE" > $INPUT_FILE
 	```
 	
+### Weryfikacja działania środowiska konteneryzacji
+
+1) Rozpocznij przygotowanie środowiska Dockerowego
+
+	* zapewnij dostęp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")
 	
+	* jeżeli nie jest stosowane VM (np. WSL, Mac, natywny linux), wykaż ten fakt dokładnie
+	
+	Cały czas jestem połączony z wykorzystaniem ssh do WSL2 z Ubuntu
+
+	* zainstaluj środowisko dockerowe w stosowanym systemie operacyjnym
+	
+	![](./img/16.png)
