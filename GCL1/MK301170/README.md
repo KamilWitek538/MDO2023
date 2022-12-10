@@ -23,5 +23,11 @@ Komunikacja SFTP
 Edycja lokalnego pliku README
 ![](https://github.com/InzynieriaOprogramowaniaAGH/MDO2023/blob/MK301170/GCL1/MK301170/Lab1/screenshots/9.png "")
 
+Aby dodać gałąź lokalną do grupowej i zacommitować zmiany użyłem komendy:
+git push -u origin MK301170
+
 5. Commit lokalnych zmian do nowo utworzonego brancha na githubie (MK301170)
 ![](https://github.com/InzynieriaOprogramowaniaAGH/MDO2023/blob/MK301170/GCL1/MK301170/Lab1/screenshots/10.png "")
+
+
+
