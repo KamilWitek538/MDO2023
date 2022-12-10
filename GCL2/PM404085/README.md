@@ -62,3 +62,7 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	* Oznacz tagiem ostatni commit i wypchnij go na zdalną gałąź
 	
 	![](./img/13.png)
+	
+	* Ustal hook, który będzie sprawdzał, czy wiadomość z commitem zawiera nazwę przedmiotu
+	
+	![](./img/14.png)
