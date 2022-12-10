@@ -71,6 +71,6 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	
 	* W jaki sposób stworzyć hook, który będzie ustawiał prefiks wiadomości commitu tak, by miał nazwę przedmiotu?
 	
-	Należy do tego wykorzystać hook pre-commit-msg. Skrypt na bazie poprzedniego kodu. Po zamknięciu ifa 'fi' dodajemy komendę echo "$PATTERN $START_LINE" > $INPUT_FILE
+	Należy do tego wykorzystać hook pre-commit-msg. Skrypt na bazie poprzedniego kodu. Po zamknięciu ifa 'fi' dodajemy komendę echo "$KEY $START_LINE" > $INPUT_FILE
 	
 	
