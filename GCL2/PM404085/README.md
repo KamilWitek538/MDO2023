@@ -52,3 +52,9 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
     * Wyślij zmiany do zdalnego źródła
 	
 	![](./img/11.png)
+	
+	* Spróbuj wciągnąć swoją gałąź do gałęzi grupowej
+	
+	* Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
+
+	![](./img/12.png)
