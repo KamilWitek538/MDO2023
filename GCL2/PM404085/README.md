@@ -5,6 +5,7 @@
 1) Wykaż możliwość komunikacji ze środowiskiem linuksowym (powłoka oraz przesyłanie plików)
 
 Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania laboratorium. Połączyłem się z WSLem za pomocą ssh oraz sftp.
+
 ![](./img/0.png)
 ![](./img/1.png)
 ![](./img/2.png)
