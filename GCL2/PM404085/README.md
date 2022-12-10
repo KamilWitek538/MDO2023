@@ -88,4 +88,16 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 
 	* zainstaluj środowisko dockerowe w stosowanym systemie operacyjnym
 	
+2) Działanie środowiska
+	
+	* wykaż, że środowisko dockerowe jest uruchomione i działa (z definicji)
+	
 	![](./img/16.png)
+	
+	* wykaż działanie z sposób praktyczny (z własności):
+	
+		* pobierz obraz dystrybucji linuksowej i uruchom go
+		
+		* wyświetl jego numer wersji
+		
+3) Załóż konto na Docker Hub lub zaloguj się do już posiadanego. Zadbaj o 2FA.
