@@ -7,7 +7,9 @@
 Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania laboratorium. Połączyłem się z WSLem za pomocą ssh oraz sftp.
 
 ![](./img/0.png)
+
 ![](./img/1.png)
+
 ![](./img/2.png)
 
 2) Zainstaluj klienta Git i obsługę kluczy SSH
@@ -48,3 +50,5 @@ Zdecydowałem się na wykorzystanie WSL2 oraz dystrybucji Ubuntu do wykonania la
 	![](./img/10.png)
 	
     * Wyślij zmiany do zdalnego źródła
+	
+	![](./img/11.png)
