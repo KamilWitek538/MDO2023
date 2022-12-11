@@ -42,16 +42,16 @@
 ![](./screenshots/7.9.png)  
 ![](./screenshots/7.9.1.png)  
 ![](./screenshots/7.9.2.png)  
-### Weryfikacja dzia³ania œrodowiska konteneryzacji
-1. Rozpocznij przygotowanie œrodowiska Dockerowego
-    * zapewnij dostêp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")
-    * je¿eli nie jest stosowane VM (np. WSL, Mac, natywny linux), wyka¿ ten fakt **dok³adnie**
-    * zainstaluj œrodowisko dockerowe w stosowanym systemie operacyjnym
-2. Dzia³anie œrodowiska
-    * wyka¿, ¿e œrodowisko dockerowe jest uruchomione i dzia³a (z definicji)
-    * wyka¿ dzia³anie z sposób praktyczny (z w³asnoœci):
-      * pobierz obraz dystrybucji linuksowej i uruchom go 
-      * wyœwietl jego numer wersji
+### Weryfikacja dzia³ania œrodowiska konteneryzacji  
+1. Rozpocznij przygotowanie œrodowiska Dockerowego  
+    * zapewnij dostêp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")  
+    * je¿eli nie jest stosowane VM (np. WSL, Mac, natywny linux), wyka¿ ten fakt **dok³adnie**  
+    * zainstaluj œrodowisko dockerowe w stosowanym systemie operacyjnym  
+2. Dzia³anie œrodowiska  
+    * wyka¿, ¿e œrodowisko dockerowe jest uruchomione i dzia³a (z definicji)  
+    * wyka¿ dzia³anie z sposób praktyczny (z w³asnoœci):  
+      * pobierz obraz dystrybucji linuksowej i uruchom go  
+      * wyœwietl jego numer wersji  
 ![](./screenshots/8.png)  
-5. Za³ó¿ konto na Docker Hub lub zaloguj siê do ju¿ posiadanego. Zadbaj o 2FA.
+5. Za³ó¿ konto na Docker Hub lub zaloguj siê do ju¿ posiadanego. Zadbaj o 2FA.  
 ![](./screenshots/9.png)  
