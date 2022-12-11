@@ -43,12 +43,12 @@ dotnet) lub obraz stworzony samodzielnie i zarejestrowany/widoczny w DIND (jak n
     *  Krok uruchamiający aplikację na kontenerze docelowym
     *  Jeżeli kontener buildowy i docelowy wydają się być te same - być może warto zacząć od kroku `Publish` poniżej
     *  Proszę opisać szczegółowo proces który zostanie opisany jako Deploy, ze względu na mnogość podejść
-  *  Publish
-    *  Przygotowanie wersjonowanego artefaktu, na przykład:
-      *  Instalator
-      *  NuGet/Maven/NPM/JAR
-      *  ZIP ze zbudowanym runtimem
-    *  Opcjonalnie, krok publish (w przypadku podania parametru) może dokonywać promocji artefaktu na zewnętrzne registry
+  * Publish
+    * Przygotowanie wersjonowanego artefaktu, na przykład:
+      * Instalator
+      * NuGet/Maven/NPM/JAR
+      * ZIP ze zbudowanym runtimem
+    * Opcjonalnie, krok publish (w przypadku podania parametru) może dokonywać promocji artefaktu na zewnętrzne registry
 #### Oczekiwana postać sprawozdania
 * Sprawozdanie nie powinno być jedynie enumeracją wykonanych kroków.
 * Sprawozdanie musi zawierać na wstępie opis celu wykonywanych czynności oraz streszczenie przeprowadzonego projektu.
