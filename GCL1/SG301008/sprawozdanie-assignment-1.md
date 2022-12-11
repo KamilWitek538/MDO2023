@@ -37,5 +37,7 @@
 ![](./screenshots/7.7.png)  
    - Ustal hook, który bêdzie sprawdza³, czy wiadomoœæ z commitem zawiera nazwê przedmiotu  
 ![](./screenshots/7.8.png)  
+![](./screenshots/7.8.1.png)  
    - W jaki sposób stworzyæ hook, który bêdzie *ustawia³* prefiks wiadomoœci commitu tak, by mia³ nazwê przedmiotu?  
 ![](./screenshots/7.9.png)  
+![](./screenshots/7.9.1.png)  
