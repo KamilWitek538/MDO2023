@@ -1,3 +1,0 @@
-FROM buildsqlite:0.1
-
-RUN make test
