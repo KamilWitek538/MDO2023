@@ -41,3 +41,4 @@
    - W jaki sposób stworzyæ hook, który bêdzie *ustawia³* prefiks wiadomoœci commitu tak, by mia³ nazwê przedmiotu?  
 ![](./screenshots/7.9.png)  
 ![](./screenshots/7.9.1.png)  
+![](./screenshots/7.9.2.png)  
