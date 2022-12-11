@@ -1,0 +1,3 @@
+FROM bldr
+WORKDIR /irssi/
+RUN ninja -C Build test

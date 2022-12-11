@@ -1,0 +1,2 @@
+FROM fedora
+RUN dnf -y install git meson openssl1* ncurses* utf8proc* glib2* gcc-c++ perl-Ex*
