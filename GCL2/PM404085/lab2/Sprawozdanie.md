@@ -58,3 +58,38 @@ Pokazanie uruchomionych kontenerów:
 
 ![](./img/7.png)
 
+### Budowanie programu
+
+1) Znajdź projekt umożliwiający łatwe wywołanie testów jednostkowych
+
+Znalazłem projekt napisany w JS z prostym opisem funkcjonalności: https://github.com/MarcL/js-unit-testing-examples
+
+2) Przeprowadź budowę/konfigurację środowiska
+
+Postępując zgodnie z instrukcją projektu wykonujemy kolejno:
+```
+git clone git@github.com:MarcL/js-unit-testing-framework.git
+npm install
+```
+
+Podczas installacji zależności npm napotkałem problem:
+
+![](./img/8.png)
+
+Który został naprawiony poprzez wywołania polecenia:
+
+```
+npm install --save --legacy-peer-deps
+```
+
+![](./img/9.png)
+
+3) Uruchom testy
+
+Uruchomiłem testy poprzez wywołanie:
+```
+npm test
+```
+
+![](./img/10.png)
+
