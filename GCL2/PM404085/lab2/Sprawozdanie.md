@@ -37,11 +37,6 @@ Uruchomiłem system Fedora oraz zainstalowałem pakiet procps z którego skorzys
 	
 	* Zaktualizuj pakiety
 	
-	Zaktualizowałem pakiety korzystając z polecenia:
-	```
-	dnf upgrade
-	```
-	
 	![](./img/4.png)
 	
 	* Wyjdź
