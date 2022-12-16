@@ -4,4 +4,4 @@
 
 1) Zainstaluj Docker w systemie linuksowym
 
-![](../img/2.png)
+![](../img/16.png)
