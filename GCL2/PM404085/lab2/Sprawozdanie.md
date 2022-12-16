@@ -20,10 +20,10 @@ Instalujemy wymienione obrazy za pomocą polecenia docker pull <nazwa>
 
 4) Uruchom busybox
 
-	* Pokaż efekt uruchomienia kontenera
-	* Podłącz się do kontenera interaktywnie i wywołaj numer wersji
+* Pokaż efekt uruchomienia kontenera
+* Podłącz się do kontenera interaktywnie i wywołaj numer wersji
 	
-	![](./img/1.png)
+![](./img/1.png)
 	
 5) Uruchom "system w kontenerze"
 
@@ -31,17 +31,22 @@ Uruchomiłem system Fedora oraz zainstalowałem pakiet procps z którego skorzys
 
 ![](./img/2.png)
 
-	* Zaprezentuj PID1 w kontenerze i procesy dockera na hoście
+* Zaprezentuj PID1 w kontenerze i procesy dockera na hoście
 	
-	![](./img/3.png)
+![](./img/3.png)
 	
-	* Zaktualizuj pakiety
+* Zaktualizuj pakiety
 	
-	![](./img/4.png)
+Zaktualizowałem pakiety korzystając z polecenia:
+```
+dnf upgrade
+```
 	
-	* Wyjdź
+![](./img/4.png)
 	
-	![](./img/5.png)
+* Wyjdź
+	
+![](./img/5.png)
 	
 6) Pokaż uruchomione ( != "działające" ) kontenery
 
