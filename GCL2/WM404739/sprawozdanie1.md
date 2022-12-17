@@ -28,3 +28,9 @@
 ![](./screeny/12.png)
 	- Dodaj zrzuty ekranu 
 ![](./screeny/13.png)
+	- Wyślij zmiany do zdalnego źródła 
+![](./screeny/14.png)
+	- Spróbuj wciągnąć swoją gałąź do gałęzi grupowej  
+![](./screeny/15.png)
+	- Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
+![](./screeny/16.png)
