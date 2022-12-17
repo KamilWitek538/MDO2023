@@ -147,3 +147,17 @@ RUN npm install --save --legacy-peer-deps
 ```
 
 ![](./img/17.png)
+
+7) Na bazie obrazu utworzonego poprzednim dockerfilem stwórz kolejny, który będzie uruchamiał testy
+
+* Kontener pierwszy ma przeprowadzać wszystkie kroki aż do builda
+
+* Kontener drugi ma bazować na pierwszym i wykonywać testy
+
+Testy wywołamy poprzez dodanie do Dockerfile:
+
+```
+RUN npm test
+```
+
+![](./img/18.png)
