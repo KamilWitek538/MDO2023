@@ -41,3 +41,7 @@
 ![](./screeny/hook.png)
 20.Test działania hooka
 ![](./screeny/hook_test.png)
+21.Uruchomienie obrazu dystrybucji linuksowej i wyswietlenie numeru wersji.
+![](./screeny/docker_test.png)
+22.Rejestracja na Docker Hub
+![](./screeny/docker_hub.png)
