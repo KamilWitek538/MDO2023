@@ -93,3 +93,57 @@ npm test
 
 ![](./img/10.png)
 
+4) Ponów ten proces w kontenerze
+
+* Wybierz i uruchom platformę
+
+![](./img/12.png)
+
+* Zaopatrz ją w odpowiednie oprogramowanie wstępne
+
+```
+sudo dnf install nodejs
+sudo dnf install git
+```
+
+![](./img/11.png)
+
+* Sklonuj aplikację
+
+```
+git clone https://github.com/MarcL/js-unit-testing-examples.git
+```
+
+![](./img/13.png)
+
+* Skonfiguruj środowisko i uruchom build
+
+![](./img/14.png)
+
+* Uruchom testy
+
+![](./img/15.png)
+
+5) Stwórz Dockerfile, który ma to osiągnąć
+
+* Na bazie platformowego obrazu...
+* ...doinstaluj wymagania wstępne...
+* ...sklonuj repozytorium...
+* ...zbuduj kod
+
+6) Zaprezentuj Dockerfile i jego zbudowanie
+
+```
+FROM fedora 
+
+RUN dnf upgrade -y
+RUN dnf install git -y
+RUN dnf install nodejs -y
+
+
+RUN git clone https://github.com/MarcL/js-unit-testing-examples.git
+WORKDIR js-unit-testing-examples
+RUN npm install --save --legacy-peer-deps
+```
+
+![](./img/17.png)
