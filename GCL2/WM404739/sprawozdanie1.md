@@ -34,3 +34,4 @@
 ![](./screeny/15.png)
 	- Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
 ![](./screeny/16.png)
+	- Oznacz tagiem ostatni commit i wypchnij go na zdalną gałąź
