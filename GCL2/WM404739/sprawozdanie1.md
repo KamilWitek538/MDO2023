@@ -35,3 +35,18 @@
 	- Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
 ![](./screeny/16.png)
 	- Oznacz tagiem ostatni commit i wypchnij go na zdalną gałąź
+![](./screeny/17.png)
+	- Ustall hool, ktory bedzie sprawdzal, czy wiadomosc z commitem zawiera nazwe przedmiotu
+![](.screeny/18.png)
+	- Hook, ktory bedzie ustawial prefiks wiadomosci commitu tak, by mial nazwe przedmiotu.
+![](.screeny/19.png)
+# Weryfikacja działania środowiska konteneryzacji.
+1. Rozpocznij przygotowanie środowiska Dockerowego
+	- zapewnij dostęp do m aszyny wirtualnej przez zdany terminal 
+	- zainstaluj środowisko dockerowe w stosowanym systemie operacyjnym
+2. Działanie środowiska 
+![](.screeny/20.png)
+![](.screeny/21.png)
+3. Załóż konto na Docker Hub. Zadbaj o 2FA (niestety nie dałem rady jeszcze zainstalować aplikacji 
+Docker Hyba na iOS'a)
+![](.screeny/22.png)
