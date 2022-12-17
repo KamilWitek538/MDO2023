@@ -16,7 +16,7 @@
 7.Klonowanie repozytorium za pomocą protokolu https
 ![](./screeny/klonowanie_http.png)
 8.Generowanie klucza ssh bez hasla
-![](./screeny/generowanie_klucza_ssh.png)
+![](./screeny/generownie_klucza_ssh.png)
 9.Generowanie klucza ssh z haslem
 ![](./screeny/generowanie_klucza_ssh_haslo.png)
 10.Przeslanie kluczy z maszyny na hosta
@@ -30,11 +30,14 @@
 14.Stworzenie nowej galezi
 ![](./screeny/stworzenie_nowej_galezi.png)
 15.Tworzenie folderów w gałezi
-![](./screeny/stworzenie_folderu_w_galezi.png)
+![](./screeny/tworzenie_folderu_w_galezi.png)
 16.Stworzenie sprawozdania i folderu na ss
 ![](./screeny/tworzenie_sprawka_screeny.png)
-17.Wciaganie swojej galezi do gałezi grupowej.
+17.Wciaganie swojej galezi do gałezi grupowej
 ![](./screeny/merge.png)
-18.
-
-
+18.Oznaczenie tagiem ostatni commit
+![](./screeny/tag.png)
+19.Ustalanie nowego hooka
+![](./screeny/hook.png)
+20.Test działania hooka
+![](./screeny/hook_test.png)
