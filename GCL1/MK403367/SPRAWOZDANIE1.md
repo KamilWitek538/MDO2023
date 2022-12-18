@@ -136,5 +136,5 @@ sudo dmidecode -s system-manufacturer
 sudo dmidecode | grep Product
 ``` 
 ![image description](vm.png)
-Mozna zauwazyc, ze producentem sprzetu jest firma MSI. Gdyby odpalić to samo polecenie na VM output byłby podobny do tego ponizej i przedstawiał producenta oprogramowania wirtualizującego.
+Mozna zauwazyc, ze producentem sprzetu jest firma MSI. Po nazwach modeli sprzętowych równiez jesteśmy w stanie potrwierdzić "fizycznosc" sprzętu. Gdyby odpalić to samo polecenie na VM output byłby podobny do tego ponizej i przedstawiał producenta oprogramowania wirtualizującego.
 ![image description](przyklad-vm.png)
