@@ -37,7 +37,9 @@
 ![](./images/7-1.png)
    - Wyślij zmiany do zdalnego źródła
    - Spróbuj wciągnąć swoją gałąź do gałęzi grupowej
+![](./images/7-3.png)
    - Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
+![](./images/7-4.png)
    - Oznacz tagiem ostatni commit i wypchnij go na zdalną gałąź
    - Ustal hook, który będzie sprawdzał, czy wiadomość z commitem zawiera nazwę przedmiotu
    - W jaki sposób stworzyć hook, który będzie *ustawiał* prefiks wiadomości commitu tak, by miał nazwę przedmiotu?
