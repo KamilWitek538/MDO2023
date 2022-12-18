@@ -2,11 +2,11 @@
 Michał Kutaj
 403367
 
-Wykorzystany został natywny system Ubuntu 22, do którego łączę się z sieci lokalnej z macbooka zwanego dalej - "jabuszkiem"
+Wykorzystany został natywny system Ubuntu 22, do którego łączę się z sieci lokalnej z macbooka
 
 
 
-1. Instalacja serwera ssh na serwerze oraz konfiguracja zapory
+Instalacja serwera ssh na serwerze oraz konfiguracja zapory
 ```
 sudo apt update
 sudo apt install ssh-server
@@ -100,16 +100,41 @@ git push --tags
 Git trzyma hooki w katalogu projektu w `.git/hooks`, tam nalezy utworzyć plik o nazwie `commit-msg`, który będzie sprawdzał czy wiadomości dodawane do commitów zawierają nazwę przedmiotu.
 Zawartość pliku wygląda następująco. Pod zmienną `$1` jest zapisana ściezka do pliku tymczasowego, w którym siedzi message wpisany przy tworzeniu commit
 ```bash
- 1 #!/bin/bash
- 2
- 3 prefix="DEVOPS"
- 4 msg=$(< $1)
- 5 if ! [[ $msg == $prefix* ]]; then
- 6     echo "commit must start with \"$prefix\""
- 7     exit 1
- 8 fi
- 9
-10 exit 0
+#!/bin/bash
+ 
+prefix="DEVOPS"
+msg=$(< $1)
+if ! [[ $msg == $prefix* ]]; then
+    echo "commit must start with \"$prefix\""
+    exit 1
+fi
+
+exit 0
 ```
 
-Aby do wiadomości commita został automatycznie dodany prefix nalezy stworzyc kolejny commit `pre-commit-message`
+Aby do wiadomości commita został automatycznie dodany prefix nalezy stworzyc kolejny commit `pre-commit-message`. Skrypt wygląda następująco:
+```bash
+#!/bin/bash
+
+prefix="DEVOPS"
+msg=$(< $1)
+
+if ! [[ $msg == $prefix* ]]; then
+    sed -i '.bak' "1s/^/$prefix /" $1
+fi
+```
+Po dodaniu hooka został stworzony nastepujący commit
+![image description](hook-prefix-commit.png)
+Przy uzyciu polecenia `git log` mozemy wyświetlić listę commitów, jak widać do naszego commita został dodany prefix, a wiec hook działa poprawnie
+![image description](log-po-hooku.png)
+
+## Weryfikacja środowiska konteneryzacji
+
+Tak jak było to wspomniane wcześniej środowiskiem konreneryzacji jest komputer z natywnym systemem Linux. Instalacja i konfiguracja połączenienia SSH została przedstawiona na początku sprawka. Aby wykazać fakt, ze nie jest wykorzystywana VMka mozna uzyć polecenia 
+```
+sudo dmidecode -s system-manufacturer
+sudo dmidecode | grep Product
+``` 
+![image description](vm.png)
+Mozna zauwazyc, ze producentem sprzetu jest firma MSI. Gdyby odpalić to samo polecenie na VM output byłby podobny do tego ponizej i przedstawiał producenta oprogramowania wirtualizującego.
+![image description](przyklad-vm.png)
