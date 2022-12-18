@@ -41,7 +41,10 @@
    - Zaktualizuj sprawozdanie i zrzuty o ten krok i wyślij aktualizację do zdalnego źródła (na swojej gałęzi)
 ![](./images/7-4.png)
    - Oznacz tagiem ostatni commit i wypchnij go na zdalną gałąź
+![](./images/7-5.png)
    - Ustal hook, który będzie sprawdzał, czy wiadomość z commitem zawiera nazwę przedmiotu
+![](./images/7-6.png)
+![](./images/7-7.png)
    - W jaki sposób stworzyć hook, który będzie *ustawiał* prefiks wiadomości commitu tak, by miał nazwę przedmiotu?
 ### Weryfikacja działania środowiska konteneryzacji
 1. Rozpocznij przygotowanie środowiska Dockerowego
