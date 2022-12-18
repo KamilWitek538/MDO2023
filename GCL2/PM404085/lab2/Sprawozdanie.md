@@ -133,6 +133,7 @@ git clone https://github.com/MarcL/js-unit-testing-examples.git
 
 6) Zaprezentuj Dockerfile i jego zbudowanie
 
+Dockerfile konternera budującego:
 ```
 FROM fedora 
 
@@ -140,10 +141,10 @@ RUN dnf upgrade -y
 RUN dnf install git -y
 RUN dnf install nodejs -y
 
-
 RUN git clone https://github.com/MarcL/js-unit-testing-examples.git
 WORKDIR js-unit-testing-examples
 RUN npm install --save --legacy-peer-deps
+CMD ["npm", "start"]
 ```
 
 ![](./img/17.png)
@@ -154,10 +155,18 @@ RUN npm install --save --legacy-peer-deps
 
 * Kontener drugi ma bazować na pierwszym i wykonywać testy
 
-Testy wywołamy poprzez dodanie do Dockerfile:
-
+Dockerfile kontenera testującego:
 ```
-RUN npm test
+FROM fedora 
+
+RUN dnf upgrade -y
+RUN dnf install git -y
+RUN dnf install nodejs -y
+
+RUN git clone https://github.com/MarcL/js-unit-testing-examples.git
+WORKDIR js-unit-testing-examples
+RUN npm install --save --legacy-peer-deps
+CMD ["npm", "test"]
 ```
 
-![](./img/18.png)
+Dockerfile budujący znajduje się w katalogu build, a testujący w katalogu test

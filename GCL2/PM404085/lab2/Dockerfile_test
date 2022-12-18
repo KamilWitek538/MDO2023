@@ -1,4 +1,0 @@
-FROM fedora 
-
-WORKDIR js-unit-testing-examples
-RUN npm test
