@@ -60,6 +60,7 @@
       * pobierz obraz dystrybucji linuksowej i uruchom go 
       * wyświetl jego numer wersji
 5. Załóż konto na Docker Hub lub zaloguj się do już posiadanego. Zadbaj o 2FA.
+![](./images/8-1.png)
 
 ## Główny wątek następnych zajęć
 ### Wybór oprogramowania na zajęcia
