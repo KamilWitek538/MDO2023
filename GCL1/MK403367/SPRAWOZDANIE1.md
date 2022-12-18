@@ -98,14 +98,18 @@ git push --tags
 ```
 ![image description](tag.png)
 Git trzyma hooki w katalogu projektu w `.git/hooks`, tam nalezy utworzyć plik o nazwie `commit-msg`, który będzie sprawdzał czy wiadomości dodawane do commitów zawierają nazwę przedmiotu.
-Zawartość pliku wygląda następująco. Message commita jest dostępny pod zmienną `$1`
+Zawartość pliku wygląda następująco. Pod zmienną `$1` jest zapisana ściezka do pliku tymczasowego, w którym siedzi message wpisany przy tworzeniu commit
 ```bash
-#!/bin/bash
-
-prefix="DEVOPS"
-
-if ! [[ $1 == $prefix* ]]; then
-     echo "commit must start with \"$prefix\""
-     exit 1;
-fi
+ 1 #!/bin/bash
+ 2
+ 3 prefix="DEVOPS"
+ 4 msg=$(< $1)
+ 5 if ! [[ $msg == $prefix* ]]; then
+ 6     echo "commit must start with \"$prefix\""
+ 7     exit 1
+ 8 fi
+ 9
+10 exit 0
 ```
+
+Aby do wiadomości commita został automatycznie dodany prefix nalezy stworzyc kolejny commit `pre-commit-message`
