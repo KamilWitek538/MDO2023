@@ -84,9 +84,28 @@ git commit -m "add report with imgs"
 git push --set-upstream origin MK403367
 ```
 ![image description](push.png)
-Aby zmergować branche nalezy przełączyć się na branch do którego chcemy dograć zmiany. Merge ma być do brancha grupowego więc na ten branch się przełączamy.
+Aby zmergować branch nalezy przełączyć się na branch, do którego chcemy dograć zmiany. Merge ma być do brancha grupowego więc na ten branch się przełączamy.
 ```
 git checkout GCL1
 bit merge MK403367
 ```
 ![image description](merge.png)
+
+Aby stworzyć tag nalezy uzyc polecenia
+```
+git tag TAGMK403367
+git push --tags
+```
+![image description](tag.png)
+Git trzyma hooki w katalogu projektu w `.git/hooks`, tam nalezy utworzyć plik o nazwie `commit-msg`, który będzie sprawdzał czy wiadomości dodawane do commitów zawierają nazwę przedmiotu.
+Zawartość pliku wygląda następująco. Message commita jest dostępny pod zmienną `$1`
+```bash
+#!/bin/bash
+
+prefix="DEVOPS"
+
+if ! [[ $1 == $prefix* ]]; then
+     echo "commit must start with \"$prefix\""
+     exit 1;
+fi
+```
