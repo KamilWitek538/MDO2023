@@ -77,3 +77,16 @@ Utworzenie katalogu w katalogu grupy i dodanie plików sprawozdania i zrzutów e
 ![image description](scp-sprawko-img.png)
 Widok katalogu na serwerze po przesłaniu plików
 ![image description](ls-katalogu.png)
+Pliki zostały dodane do repoyztorium, został utworzony commit, który został wypchany na serwer
+```
+git add *
+git commit -m "add report with imgs"
+git push --set-upstream origin MK403367
+```
+![image description](push.png)
+Aby zmergować branche nalezy przełączyć się na branch do którego chcemy dograć zmiany. Merge ma być do brancha grupowego więc na ten branch się przełączamy.
+```
+git checkout GCL1
+bit merge MK403367
+```
+![image description](merge.png)
