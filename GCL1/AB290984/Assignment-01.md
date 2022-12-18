@@ -67,3 +67,4 @@
 * Sklonuj niniejsze repozytorium, przeprowadź build programu (doinstaluj wymagane zależności)
 * Uruchom testy jednostkowe dołączone do repozytorium
 
+
