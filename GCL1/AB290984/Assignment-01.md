@@ -66,3 +66,4 @@
 	* Zawiera zdefiniowane i obecne w repozytorium testy, które można uruchomić np. jako jeden z "targetów" Makefile'a. Testy muszą jednoznacznie formułować swój raport końcowy (gdy są obecne, zazwyczaj taka jest praktyka)
 * Sklonuj niniejsze repozytorium, przeprowadź build programu (doinstaluj wymagane zależności)
 * Uruchom testy jednostkowe dołączone do repozytorium
+
