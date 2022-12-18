@@ -59,6 +59,7 @@
     * wykaż działanie z sposób praktyczny (z własności):
       * pobierz obraz dystrybucji linuksowej i uruchom go 
       * wyświetl jego numer wersji
+![](./images/8-2.png)
 5. Załóż konto na Docker Hub lub zaloguj się do już posiadanego. Zadbaj o 2FA.
 ![](./images/8-1.png)
 
