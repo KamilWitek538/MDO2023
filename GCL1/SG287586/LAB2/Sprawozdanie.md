@@ -1,17 +1,17 @@
 1. Zainstaluj docker- apt install docker, weryfikacja docker --version, systemctl status docker
-![first](/home/sebastian/LAB2SS/first.png)
+![first](./first.png)
 
 2. Zarejestruj się w dockerhub- konto założone, nick objdumpr 
-![second](/home/sebastian/LAB2SS/2ss.png)
+![second](./2ss.png)
 
 3. Pobierz hello-world, busybox, ubuntu lub fedorę, mysql- pobieranie za pomocą polecenia docker pull, np. docker pull ubuntu. Weryfikacja obrazów docker images 
-![third](/home/sebastian/LAB2SS/3ss.png)
+![third](./3ss.png)
 
 4. Uruchom busybox- polecenie docker run -it --rm busybox
-![fourth](/home/sebastian/LAB2SS/4ss.png)
+![fourth](./4ss.png)
 
 	interaktywne łączenie do kontenera- docker ps -a- zwraca id kontenera. Wywołanie numeru wersji uname -a 
-![fifth](/home/sebastian/LAB2SS/5ss.png)
+![fifth](./5ss.png)
 
 5. Uruchom "system w kontenerze" docker run -i --tty a8780b506fa4 bash
 	Zaprezentuj PID1 w kontenerze- docker exec -it 704bad1eb70f ps -ef (id wzięte z polecenia docker ps -a). Procesy dockera na hoście:
@@ -20,15 +20,15 @@
 	Zaktualizuj pakiety- docker exec -it 704bad1eb70f apt update, docker exec -it 704bad1eb70f apt upgrade
 
 	Wyjdz- ctrl + d 
-![sixth](/home/sebastian/LAB2SS/6ss.png)
+![sixth](./6ss.png)
 
 
 6. Pokaz uruchomione (!= działające kontenery) i wyczyść je: docker ps --filter status=exited; docker container prune
-![nineth](/home/sebastian/LAB2SS/9ss.png)
+![nineth](./9ss.png)
 
 
 7. Wyczyść obrazy: docker images (wypisuje id) i docker image rm a3a2968869cf 9d5226e6ce3f a8780b506fa4 feb5d9fea6a5
-![tenth](/home/sebastian/LAB2SS/10ss.png)
+![tenth](./10ss.png)
 
 
 
@@ -39,22 +39,22 @@
 
 2. Przeprowadź budowę/konfigurację środowiska: 
 	git clone https://github.com/sqlite/sqlite.git - klonownie repozytorium 
-![twelveth](/home/sebastian/LAB2SS/12ss.png)
+![twelveth](./12ss.png)
 	
 	pobranie dodatkowo potrzebnnych paczek- apt install libz-dev libtool autoconf tcl-dev
-![thirteenth](/home/sebastian/LAB2SS/11ss.png)
+![thirteenth](./11ss.png)
 
 	Stworzenie katalogu bld mkdir bld, cd bld
 	Konfiguracja: ../configure
-![fourteenth](/home/sebastian/LAB2SS/13ss.png)
-![fiveteenth](/home/sebastian/LAB2SS/14ss.png)
+![fourteenth](./13ss.png)
+![fiveteenth](./14ss.png)
 
 	Budowanie makefile: make 
-![sixteenth](/home/sebastian/LAB2SS/15ss.png)
-![seventeenth](/home/sebastian/LAB2SS/16ss.png)
+![sixteenth](./15ss.png)
+![seventeenth](./16ss.png)
 
 	Budowanie pliku źródłowego: make sqlite3.c
-![eighteenth](/home/sebastian/LAB2SS/17ss.png)
+![eighteenth](./17ss.png)
 
 
 3. Uruchom testy: make test
@@ -65,26 +65,26 @@
 	Maximum memory usage: 9196688 bytes
 	Current memory usage: 0 bytes
 	Number of malloc()  : -1 calls
-![nineteenth](/home/sebastian/LAB2SS/18ss.png)
-![twentyth](/home/sebastian/LAB2SS/19ss.png)
+![nineteenth](./18ss.png)
+![twentyth](./19ss.png)
 
 
 4. Ponów ten proces w kontenerze:
 	Wybierz i uruchom platformę: uruchamiam obraz ubuntu docker run -i -t --net=host ubuntu /bin/bash (bez parametru net miałem problem z pobieraniem paczek z repo)
-![twentyfirst](/home/sebastian/LAB2SS/20ss.png)	
+![twentyfirst](./20ss.png)	
 
 	Zaopatrz ją w odpowiednie oprogramowanie wstępne: apt update, apt -y upgrade, apt install -y libtool autoconf tcl-dev git libz-dev ; useradd -m sebastian
-![twentysecond](/home/sebastian/LAB2SS/21ss.png)
+![twentysecond](./21ss.png)
 
 	Sklonuj aplikację: su - sebastian; git clone https://github.com/sqlite/sqlite.git
-![twentythird](/home/sebastian/LAB2SS/22ss.png)
+![twentythird](./22ss.png)
 
 	Skonfiguruj środowsiko i urchom build: tak jak uprzednio mkdir bld, cd bld, ../configure, make, make sqlite3.c
-![twentyfourth](/home/sebastian/LAB2SS/23ss.png)
-![twentyfifth](/home/sebastian/LAB2SS/24ss.png)
-![twentysixth](/home/sebastian/LAB2SS/25ss.png)
-![twentyseventh](/home/sebastian/LAB2SS/26ss.png)
-![twentyeigthth](/home/sebastian/LAB2SS/27ss.png)
+![twentyfourth](./23ss.png)
+![twentyfifth](./24ss.png)
+![twentysixth](./25ss.png)
+![twentyseventh](./26ss.png)
+![twentyeigthth](./27ss.png)
 
 	Uruchom testy: make test  
 	fuzzcheck: 0 errors out of 46217 tests in 26.612 seconds
@@ -98,14 +98,14 @@
 
 
 5. Stwórz Dockerfile, który ma to osiągnąc: tworzę docker file DockerfileSqlite nano DockerfileSqlite, buduję image docker build -f "DockerfileSqlite" -t buildsqlite:0.1 .
-![twentynineth](/home/sebastian/LAB2SS/28ss.png)
+![twentynineth](./28ss.png)
 
 
 6. Zaprezentuj Dockerfile i jego zbudowanie- z obrazu ubuntu, aktualizuję i upgraduję wirtualny OS, ustawiam timezone (w jednej z paczek promptuje o to i w przeciwnym 
 wypadku proces by czekał na input), dociągam potrzebne paczki, tworzę usera ze środowiskiem bash, ustawiam workdir na jego home i na usera sebastian. Klonuję repo sqlite
 i tworzę katalog bld. Ustawiam workdir na sqlite/bld (w obu przypadkach ustawiam by kolejne polecenia odnosiły się do tego usera i do wskazanych katalogów  i żebym mógł
 wywołać ../configure), odpalam make i sqlite.c co kończy build
-![thirtyth](/home/sebastian/LAB2SS/29ss.png)
+![thirtyth](./29ss.png)
 
 FROM ubuntu
 
@@ -132,14 +132,14 @@ Removing intermediate container ef44837d825f
  ---> 882a5ce5966b
 Successfully built 882a5ce5966b
 Successfully tagged buildsqlite:0.1
-![thirtyfirst](/home/sebastian/LAB2SS/30ss.png)
+![thirtyfirst](./30ss.png)
 
 
 7. Na bazie obrazu utworzonego poprzednim dockerfilem stwórz kolejny, który będzie uruchamiał testy: tworzę drugi docker file: nano DockerfileSqliteTest.
 Buduję image do testów docker build -f "DockerfileSqliteTest" -t testsqlite:0.1 . Prezentacja docker file- korzystam z utworzeonego poprzedni docker image,  odpalam testy. 
 Włączenie testów z usera z poprzedniego zbudowanego obrazu i w katalogo roboczym.  
-![thirtysecond](/home/sebastian/LAB2SS/31ss.png)
-![thirtythird](/home/sebastian/LAB2SS/32ss.png)
+![thirtysecond](./31ss.png)
+![thirtythird](./32ss.png)
 
 FROM buildsqlite:0.1
 
@@ -162,8 +162,8 @@ Removing intermediate container b74be03b2f59
 Successfully built da1bd1ce0238
 Successfully tagged testsqlite:0.1
 
-![thirtyfourth](/home/sebastian/LAB2SS/33ss.png)
-![thirtyfiveth](/home/sebastian/LAB2SS/34ss.png)
+![thirtyfourth](./33ss.png)
+![thirtyfiveth](./34ss.png)
 
 
 
@@ -172,10 +172,10 @@ Successfully tagged testsqlite:0.1
 1. Zdefiniuj kompozycję, która stworzy dwie usługi- instaluję dodatek compose 
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-![thirtysixth](/home/sebastian/LAB2SS/35ss.png)
+![thirtysixth](./35ss.png)
 
 	Tworzę plik compose nano composebuildsqlite.yml
-![thirtyseventh](/home/sebastian/LAB2SS/36ss.png)
+![thirtyseventh](./36ss.png)
 
 		services:
  			 buildsqlite:
@@ -185,7 +185,7 @@ curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compo
   			second:
     				extends:
       					service: buildsqlite
-![thirtyeigth](/home/sebastian/LAB2SS/37ss.png)
+![thirtyeigth](./37ss.png)
 
 2. Wdrażam: docker-compose -f composebuildsqlite.yml up -d
 root@sebastian-VirtualBox:/home/sebastian/app# docker-compose -f composebuildsqlite.yml up -d
@@ -198,4 +198,4 @@ root@sebastian-VirtualBox:/home/sebastian/app# docker-compose -f composebuildsql
 app_buildsqlite_1   bash      Up
 app_second_1        bash      Up
 
-![thirtynineth](/home/sebastian/LAB2SS/38ss.png)
+![thirtynineth](./38ss.png)
