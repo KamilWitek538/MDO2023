@@ -69,8 +69,5 @@
         ![](./SCREENY/plik_ze_sprawozdaniem.PNG)
     - Dodaj zrzuty ekranu
         ![](./SCREENY/przeniesienie_screen.PNG)
-        ![](./SCREENY/screeny_sprawdzenie.PNG)
 
-
-
-    
+   
