@@ -78,8 +78,8 @@
         ![](./SCREENY/wypchniecie_zmian.PNG)
 
     - wyciaganie: gałąź do gałęzi grupowej
-
-    edit
+	 ![](./SCREENY/zmiana_branch_merge.PNG)
+    
 
 
 
