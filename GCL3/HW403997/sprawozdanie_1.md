@@ -11,10 +11,10 @@
     ![](./SCREENY/status_ssh.PNG)
 
     Sprawdzenie adresu naszej maszyny
-    ![](./SCREENY/adres_maszyna.PNG)
+    ![](./SCREENY/adres_maszyna.png)
 
     Komunikacja SSH
-    ![](./SCREENY/Komunikacja_ssh.PNG)
+    ![](./SCREENY/komunikacja_ssh.PNG)
 
     Przesył danych po ówczesnym zalogowaniu używając sftp
 
@@ -69,5 +69,17 @@
         ![](./SCREENY/plik_ze_sprawozdaniem.PNG)
     - Dodaj zrzuty ekranu
         ![](./SCREENY/przeniesienie_screen.PNG)
+        ![](./SCREENY/screeny_sprawdzenie.PNG)
+    - wysylanie zmian
+        ![](./SCREENY/dodanie_pliki_git.PNG)
+    - dodanie pierwszego comita
+        ![](./SCREENY/pierwszy_comit.PNG)
+    - wypchniecie zmian na serwer
+        ![](./SCREENY/wypchniecie_zmian.PNG)
 
-   
+    - wyciaganie: gałąź do gałęzi grupowej
+
+    edit
+
+
+
