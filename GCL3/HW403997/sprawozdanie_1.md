@@ -4,7 +4,8 @@
 1. Wykaż możliwość komunikacji ze środowiskiem linuksowym (powłoka oraz przesyłanie plików)
 
     Instalacja SSH przed zajeciami
-    ![](./SCREENY/bash_history.PNG)
+    ![](./SCREENY/bash_history.PNG) 
+
     ![](./SCREENY/bash_history-wyk.PNG)
 
     Sprawdzenie statusu SSH
@@ -78,8 +79,17 @@
         ![](./SCREENY/wypchniecie_zmian.PNG)
 
     - wyciaganie: gałąź do gałęzi grupowej
-	 ![](./SCREENY/zmiana_branch_merge.PNG)
+        ![](./SCREENY/zmiana_branch_merge.PNG)
+
+    - pierwszy TAG
+        ![](./SCREENY/pierwszy__tag.PNG)
     
+    - hooki
+        ![](./SCREENY/hooki.PNG)
+        
+    - zmiana uprawnienia na 700
+        ![](./SCREENY/uprawnienia.PNG)
+
 
 
 
