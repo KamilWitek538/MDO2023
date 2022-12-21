@@ -44,14 +44,20 @@
    ![](./ssh7.4.png)
    ![](./ssh7.5.png)
    ![](./ssh7.6.png)
+   
 ### Weryfikacja działania środowiska konteneryzacji
 1. Rozpocznij przygotowanie środowiska Dockerowego
     * zapewnij dostęp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")
     * jeżeli nie jest stosowane VM (np. WSL, Mac, natywny linux), wykaż ten fakt **dokładnie**
     * zainstaluj środowisko dockerowe w stosowanym systemie operacyjnym
+    ![](./docker1.png)
 2. Działanie środowiska
     * wykaż, że środowisko dockerowe jest uruchomione i działa (z definicji)
     * wykaż działanie z sposób praktyczny (z własności):
       * pobierz obraz dystrybucji linuksowej i uruchom go 
       * wyświetl jego numer wersji
+      ![](./docker2.png)
+      
+      ![](./docker3.png)
 3. Załóż konto na Docker Hub lub zaloguj się do już posiadanego. Zadbaj o 2FA.
+![](./docker.png)
