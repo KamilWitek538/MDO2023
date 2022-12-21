@@ -41,6 +41,8 @@
    ![](./ssh7.1.png)
    ![](./ssh7.2.png)
    ![](./ssh7.3.png)
+   ![](./ssh7.4.png)
+   ![](./ssh7.5.png)
 ### Weryfikacja działania środowiska konteneryzacji
 1. Rozpocznij przygotowanie środowiska Dockerowego
     * zapewnij dostęp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")
