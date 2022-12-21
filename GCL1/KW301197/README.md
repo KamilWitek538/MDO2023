@@ -38,6 +38,9 @@
    - Ustal hook, który będzie sprawdzał, czy wiadomość z commitem zawiera nazwę przedmiotu
    - W jaki sposób stworzyć hook, który będzie *ustawiał* prefiks wiadomości commitu tak, by miał nazwę przedmiotu?
    ![](./ssh7.png)
+   ![](./ssh7.1.png)
+   ![](./ssh7.2.png)
+   ![](./ssh7.3.png)
 ### Weryfikacja działania środowiska konteneryzacji
 1. Rozpocznij przygotowanie środowiska Dockerowego
     * zapewnij dostęp do maszyny wirtualnej przez zdalny terminal (nie "przez okienko")
