@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build') {
+            steps {
+                dir('GCL1/KW301197/lab2') {
+                    sh 'docker build -t testowy_obraz testowy_obraz'
+                }
+            }
+
+        }
+
+        stage('test') {
+            steps {
+                dir('GCL1/KW301197/lab2') {
+                    sh 'docker build -t testowy_obraz2 testowy_obraz2'
+                }
+            }
+        }
+    }
+}
